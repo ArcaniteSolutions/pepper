@@ -1,10 +1,13 @@
 mock
-pytest>=3.5.0,<4.0.0
+pytest>=6.0.0
+flake8-pyproject
 pytest-rerunfailures
 pytest-cov
-git+https://github.com/saltstack/pytest-salt@master#egg=pytest-salt
-tornado<5.0.0
+pytest-salt-factories==1.0.4
 CherryPy
-setuptools_scm
-pyzmq>=2.2.0,<17.1.0; python_version == '3.4'  # pyzmq 17.1.0 stopped building wheels for python3.4
-pyzmq>=2.2.0; python_version != '3.4'
+setuptools_scm==7.1.0
+importlib-metadata<5.0.0
+pyzmq>=25.1.2 ; python_version < '3.13'
+pyzmq>=26.2.0 ; python_version >= '3.13'
+cryptography>=42.0.0; python_version < '3.13'
+cryptography==42.0.2; python_version >= '3.13'
